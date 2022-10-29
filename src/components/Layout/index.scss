@@ -1,0 +1,23 @@
+.layout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 300px;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.content {
+  overflow-y: auto;
+  flex: 1;
+}
